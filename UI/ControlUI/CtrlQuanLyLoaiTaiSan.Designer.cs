@@ -37,7 +37,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tbGhiChu = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.tbTenKhoa = new System.Windows.Forms.TextBox();
+            this.tbTenLoai = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -150,12 +150,12 @@
             this.label5.TabIndex = 65;
             this.label5.Text = "Ghi chú";
             // 
-            // tbTenKhoa
+            // tbTenLoai
             // 
-            this.tbTenKhoa.Location = new System.Drawing.Point(113, 137);
-            this.tbTenKhoa.Name = "tbTenKhoa";
-            this.tbTenKhoa.Size = new System.Drawing.Size(183, 20);
-            this.tbTenKhoa.TabIndex = 61;
+            this.tbTenLoai.Location = new System.Drawing.Point(113, 137);
+            this.tbTenLoai.Name = "tbTenLoai";
+            this.tbTenLoai.Size = new System.Drawing.Size(183, 20);
+            this.tbTenLoai.TabIndex = 61;
             // 
             // label3
             // 
@@ -221,7 +221,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.tbGhiChu);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.tbTenKhoa);
+            this.Controls.Add(this.tbTenLoai);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label2);
@@ -244,7 +244,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox tbGhiChu;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbTenKhoa;
+        private System.Windows.Forms.TextBox tbTenLoai;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label txtId;
         private System.Windows.Forms.Label label2;
