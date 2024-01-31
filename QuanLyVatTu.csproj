@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
     <Compile Include="DAO\ChiTietPhieuXuatDAO.cs" />
     <Compile Include="DAO\ChiTietPhieuNhapDAO.cs" />
     <Compile Include="DAO\KhoaDAO.cs" />
@@ -217,6 +218,7 @@
   <ItemGroup>
     <Content Include="database.sql" />
     <Content Include="Resouces\delete.png" />
+    <Content Include="Resouces\detail.png" />
     <Content Include="Resouces\logo.jpg" />
     <Content Include="Resouces\picture.png" />
     <Content Include="Resouces\plus.png" />

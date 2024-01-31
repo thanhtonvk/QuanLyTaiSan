@@ -13,7 +13,6 @@
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Khoa()
         {
-            Nganhs = new HashSet<Nganh>();
         }
 
         [Key]
@@ -35,9 +34,5 @@
         [DisplayName("Ghi chú")]
 
         public string ghichu { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        [DisplayName(" ")]
-        public virtual ICollection<Nganh> Nganhs { get; set; }
     }
 }

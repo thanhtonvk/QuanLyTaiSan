@@ -25,30 +25,15 @@ namespace QuanLyVatTu.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Khoa>()
-                .HasMany(e => e.Nganhs)
-                .WithRequired(e => e.Khoa)
-                .WillCascadeOnDelete(false);
+            modelBuilder.Entity<Khoa>();
 
-            modelBuilder.Entity<LoaiTaiSan>()
-                .HasMany(e => e.TaiSans)
-                .WithRequired(e => e.LoaiTaiSan)
-                .WillCascadeOnDelete(false);
+            modelBuilder.Entity<LoaiTaiSan>();
 
-            modelBuilder.Entity<Nganh>()
-                .HasMany(e => e.TaiSans)
-                .WithRequired(e => e.Nganh)
-                .WillCascadeOnDelete(false);
+            modelBuilder.Entity<Nganh>();
 
-            modelBuilder.Entity<PhieuNhap>()
-                .HasMany(e => e.ChiTietPhieuNhaps)
-                .WithRequired(e => e.PhieuNhap)
-                .WillCascadeOnDelete(false);
+            modelBuilder.Entity<PhieuNhap>();
 
-            modelBuilder.Entity<PhieuXuat>()
-                .HasMany(e => e.ChiTietPhieuXuats)
-                .WithRequired(e => e.PhieuXuat)
-                .WillCascadeOnDelete(false);
+            modelBuilder.Entity<PhieuXuat>();
 
             modelBuilder.Entity<TaiKhoan>()
                 .Property(e => e.tentk)
@@ -58,15 +43,9 @@ namespace QuanLyVatTu.Models
                 .Property(e => e.matkhau)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<TaiSan>()
-                .HasMany(e => e.ChiTietPhieuNhaps)
-                .WithRequired(e => e.TaiSan)
-                .WillCascadeOnDelete(false);
+            modelBuilder.Entity<TaiSan>();
 
-            modelBuilder.Entity<TaiSan>()
-                .HasMany(e => e.ChiTietPhieuXuats)
-                .WithRequired(e => e.TaiSan)
-                .WillCascadeOnDelete(false);
+            modelBuilder.Entity<TaiSan>();
         }
     }
 }

@@ -119,7 +119,7 @@ namespace QuanLyVatTu.UI.ControlUI
                 tbGhiChu.Text = row.Cells[3].Value.ToString();
                 int maKhoa = int.Parse(row.Cells[4].Value.ToString());
                 Khoa khoa = khoaList.FirstOrDefault(x => x.makhoa == maKhoa);
-                comboBox1.SelectedText = khoa.tenkhoa;
+                comboBox1.Text = khoa.tenkhoa;
             }
         }
     }

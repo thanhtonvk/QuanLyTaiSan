@@ -1,7 +1,8 @@
-namespace QuanLyVatTu.Models
+﻿namespace QuanLyVatTu.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
@@ -12,35 +13,31 @@ namespace QuanLyVatTu.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TaiSan()
         {
-            ChiTietPhieuNhaps = new HashSet<ChiTietPhieuNhap>();
-            ChiTietPhieuXuats = new HashSet<ChiTietPhieuXuat>();
         }
 
         [Key]
+        [DisplayName("Mã tài sản")]
         public int mataisan { get; set; }
 
         [Required]
         [StringLength(100)]
+        [DisplayName("Tên tài sản")]
         public string tentaisan { get; set; }
+        [DisplayName("Mã ngành")]
 
         public int manganh { get; set; }
+        [DisplayName("Hình ảnh")]
 
         public string hinhanh { get; set; }
+        [DisplayName("Số lượng")]
 
         public int? soluong { get; set; }
+        [DisplayName("Ghi chú")]
 
         public string ghichu { get; set; }
+        [DisplayName("Mã loại")]
 
         public int maloai { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChiTietPhieuNhap> ChiTietPhieuNhaps { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChiTietPhieuXuat> ChiTietPhieuXuats { get; set; }
-
-        public virtual LoaiTaiSan LoaiTaiSan { get; set; }
-
-        public virtual Nganh Nganh { get; set; }
     }
 }

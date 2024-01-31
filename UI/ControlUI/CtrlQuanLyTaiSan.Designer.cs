@@ -38,7 +38,7 @@
             this.tbGhiChu = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.tbTenKhoa = new System.Windows.Forms.TextBox();
+            this.tbTaiSan = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -167,12 +167,12 @@
             this.label6.TabIndex = 63;
             this.label6.Text = "Hình ảnh";
             // 
-            // tbTenKhoa
+            // tbTaiSan
             // 
-            this.tbTenKhoa.Location = new System.Drawing.Point(101, 109);
-            this.tbTenKhoa.Name = "tbTenKhoa";
-            this.tbTenKhoa.Size = new System.Drawing.Size(183, 20);
-            this.tbTenKhoa.TabIndex = 61;
+            this.tbTaiSan.Location = new System.Drawing.Point(101, 109);
+            this.tbTaiSan.Name = "tbTaiSan";
+            this.tbTaiSan.Size = new System.Drawing.Size(183, 20);
+            this.tbTaiSan.TabIndex = 61;
             // 
             // label3
             // 
@@ -292,7 +292,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.tbTenKhoa);
+            this.Controls.Add(this.tbTaiSan);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label2);
@@ -317,7 +317,7 @@
         private System.Windows.Forms.TextBox tbGhiChu;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox tbTenKhoa;
+        private System.Windows.Forms.TextBox tbTaiSan;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label txtId;
         private System.Windows.Forms.Label label2;
