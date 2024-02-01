@@ -97,5 +97,19 @@ namespace QuanLyVatTu.UI.ControlUI
                 tbGhiChu.Text = row.Cells[3].Value.ToString();
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (id != 0)
+            {
+                Constants.id = id;
+                FrmChiTietPhieuXuat frm = new FrmChiTietPhieuXuat();
+                frm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn 1 hóa đơn nhập");
+            }
+        }
     }
 }

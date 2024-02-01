@@ -29,39 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmChiTietPhieuNhap));
-            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.tbTimKiem = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.tbGhiChu = new System.Windows.Forms.TextBox();
+            this.tbSoLuong = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.tbSdt = new System.Windows.Forms.TextBox();
+            this.tbDonGia = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(657, 188);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(35, 34);
-            this.button4.TabIndex = 54;
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -114,14 +97,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // tbTimKiem
-            // 
-            this.tbTimKiem.Location = new System.Drawing.Point(468, 188);
-            this.tbTimKiem.Multiline = true;
-            this.tbTimKiem.Name = "tbTimKiem";
-            this.tbTimKiem.Size = new System.Drawing.Size(183, 34);
-            this.tbTimKiem.TabIndex = 50;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
@@ -152,12 +127,12 @@
             this.comboBox1.Size = new System.Drawing.Size(183, 21);
             this.comboBox1.TabIndex = 63;
             // 
-            // tbGhiChu
+            // tbSoLuong
             // 
-            this.tbGhiChu.Location = new System.Drawing.Point(509, 145);
-            this.tbGhiChu.Name = "tbGhiChu";
-            this.tbGhiChu.Size = new System.Drawing.Size(183, 20);
-            this.tbGhiChu.TabIndex = 62;
+            this.tbSoLuong.Location = new System.Drawing.Point(509, 145);
+            this.tbSoLuong.Name = "tbSoLuong";
+            this.tbSoLuong.Size = new System.Drawing.Size(183, 20);
+            this.tbSoLuong.TabIndex = 62;
             // 
             // label5
             // 
@@ -169,12 +144,12 @@
             this.label5.TabIndex = 61;
             this.label5.Text = "Số lượng";
             // 
-            // tbSdt
+            // tbDonGia
             // 
-            this.tbSdt.Location = new System.Drawing.Point(110, 142);
-            this.tbSdt.Name = "tbSdt";
-            this.tbSdt.Size = new System.Drawing.Size(183, 20);
-            this.tbSdt.TabIndex = 60;
+            this.tbDonGia.Location = new System.Drawing.Point(110, 142);
+            this.tbDonGia.Name = "tbDonGia";
+            this.tbDonGia.Size = new System.Drawing.Size(183, 20);
+            this.tbDonGia.TabIndex = 60;
             // 
             // label6
             // 
@@ -207,24 +182,40 @@
             this.pictureBox1.TabIndex = 64;
             this.pictureBox1.TabStop = false;
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Blue;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(310, 185);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(97, 34);
+            this.button4.TabIndex = 65;
+            this.button4.Text = "Xuất hóa đơn";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // FrmChiTietPhieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(704, 441);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.tbGhiChu);
+            this.Controls.Add(this.tbSoLuong);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.tbSdt);
+            this.Controls.Add(this.tbDonGia);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.tbTimKiem);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "FrmChiTietPhieuNhap";
@@ -238,20 +229,18 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox tbTimKiem;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox tbGhiChu;
+        private System.Windows.Forms.TextBox tbSoLuong;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbSdt;
+        private System.Windows.Forms.TextBox tbDonGia;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button4;
     }
 }

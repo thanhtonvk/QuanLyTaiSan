@@ -24,10 +24,7 @@
         [DisplayName("Số lượng")]
         public int soluong { get; set; }
         [DisplayName("Thành tiền")]
-        public int thanhtien()
-        {
-            return dongia * soluong;
-        }
+        public int thanhtien { get => dongia * soluong; }
 
     }
 }

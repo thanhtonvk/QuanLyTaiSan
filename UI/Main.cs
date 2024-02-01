@@ -62,5 +62,25 @@ namespace QuanLyVatTu.UI
             CtrlQuanLyPhieuNhap ctrl = new CtrlQuanLyPhieuNhap();
             addUserControl(ctrl);
         }
+
+        private void thốngKêHàngTồnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CtrlThongKeHangTon ctrl = new CtrlThongKeHangTon();
+            addUserControl(ctrl);
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmDangNhap frmDangNhap = new FrmDangNhap();
+            frmDangNhap.ShowDialog();
+        }
+
+        private void đăngKýToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmDangKy FrmDangKy = new FrmDangKy();
+            FrmDangKy.ShowDialog();
+        }
     }
 }

@@ -24,3 +24,4 @@ D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.FrmDangKy.resources
 D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.FrmDangNhap.resources
 D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.FrmQuanLyTaiKhoan.resources
 D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.Main.resources
+D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.ControlUI.CtrlThongKeHangTon.resources
