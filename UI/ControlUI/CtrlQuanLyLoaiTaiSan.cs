@@ -36,7 +36,7 @@ namespace QuanLyVatTu.UI.ControlUI
             loaiTaiSan.maloai = maLoaiTS;
             loaiTaiSan.tenloai = tbTenLoai.Text.Trim();
             loaiTaiSan.ghichu = tbGhiChu.Text.Trim();
-            int result = _loaiTaiSanDao.ThemLoaiTaiSan(loaiTaiSan);
+            int result = _loaiTaiSanDao.UpdateLoaiTaiSan(loaiTaiSan);
             if (result > 0)
             {
                 MessageBox.Show("Thành công");
@@ -53,7 +53,7 @@ namespace QuanLyVatTu.UI.ControlUI
             LoaiTaiSan loaiTaiSan = new LoaiTaiSan();
             loaiTaiSan.tenloai = tbTenLoai.Text.Trim();
             loaiTaiSan.ghichu = tbGhiChu.Text.Trim();
-            int result = _loaiTaiSanDao.UpdateLoaiTaiSan(loaiTaiSan);
+            int result = _loaiTaiSanDao.ThemLoaiTaiSan(loaiTaiSan);
             if (result > 0)
             {
                 MessageBox.Show("Thành công");
@@ -76,7 +76,7 @@ namespace QuanLyVatTu.UI.ControlUI
             }
             else
             {
-                MessageBox.Show("Không thành công");
+                MessageBox.Show("Bạn không thể xóa vì có liên kết khóa ngoại");
             }
         }
 
@@ -93,7 +93,7 @@ namespace QuanLyVatTu.UI.ControlUI
                 maLoaiTS = int.Parse(row.Cells[0].Value.ToString());
                 txtId.Text = maLoaiTS.ToString();
                 tbTenLoai.Text = row.Cells[1].Value.ToString();
-                tbGhiChu.Text = row.Cells[4].Value.ToString();
+                tbGhiChu.Text = row.Cells[2].Value.ToString();
             }
         }
     }

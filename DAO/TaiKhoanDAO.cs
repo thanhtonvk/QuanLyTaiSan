@@ -33,24 +33,49 @@ namespace QuanLyVatTu.DAO
 
         public int ThemTaiKhoan(TaiKhoan taiKhoan)
         {
-            dBContext.TaiKhoans.Add(taiKhoan);
-            int result = dBContext.SaveChanges();
-            return result;
+            try
+            {
+                dBContext.TaiKhoans.Add(taiKhoan);
+                int result = dBContext.SaveChanges();
+                return result;
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
 
         public int DeleteTaiKhoan(string tenTk)
         {
-            TaiKhoan taiKhoan = dBContext.TaiKhoans.FirstOrDefault(x => x.tentk == tenTk);
-            if (taiKhoan != null) dBContext.TaiKhoans.Remove(taiKhoan);
-            int result = dBContext.SaveChanges();
-            return result;
+            try
+            {
+                TaiKhoan taiKhoan = dBContext.TaiKhoans.FirstOrDefault(x => x.tentk == tenTk);
+                if (taiKhoan != null) dBContext.TaiKhoans.Remove(taiKhoan);
+                int result = dBContext.SaveChanges();
+                return result;
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
 
         public int UpdateTaiKhoan(TaiKhoan taiKhoan)
         {
-            dBContext.TaiKhoans.AddOrUpdate(taiKhoan);
-            int result = dBContext.SaveChanges();
-            return result;
+            try
+            {
+                dBContext.TaiKhoans.AddOrUpdate(taiKhoan);
+                int result = dBContext.SaveChanges();
+                return result;
+
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
     }
 }

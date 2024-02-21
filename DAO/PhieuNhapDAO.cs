@@ -23,24 +23,48 @@ namespace QuanLyVatTu.DAO
 
         public int ThemPhieuNhap(PhieuNhap PhieuNhap)
         {
+            try
+            {
             dBContext.PhieuNhaps.Add(PhieuNhap);
             int result = dBContext.SaveChanges();
             return result;
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
 
         public int DeletePhieuNhap(int maPhieuNhap)
         {
+            try
+            {
             PhieuNhap PhieuNhap = dBContext.PhieuNhaps.FirstOrDefault(x => x.maphieunhap == maPhieuNhap);
             if (PhieuNhap != null) dBContext.PhieuNhaps.Remove(PhieuNhap);
             int result = dBContext.SaveChanges();
             return result;
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
 
         public int UpdatePhieuNhap(PhieuNhap PhieuNhap)
         {
+            try
+            {
             dBContext.PhieuNhaps.AddOrUpdate(PhieuNhap);
             int result = dBContext.SaveChanges();
             return result;
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
     }
 }

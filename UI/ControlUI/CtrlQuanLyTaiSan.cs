@@ -52,7 +52,7 @@ namespace QuanLyVatTu.UI.ControlUI
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
             TaiSan taiSan = new TaiSan();
@@ -78,7 +78,7 @@ namespace QuanLyVatTu.UI.ControlUI
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             TaiSan taiSan = new TaiSan();
             taiSan.soluong = 0;
@@ -112,7 +112,7 @@ namespace QuanLyVatTu.UI.ControlUI
             }
             else
             {
-                MessageBox.Show("Thất bại");
+                MessageBox.Show("Bạn không thể xóa vì có liên kết khóa ngoại");
             }
         }
 

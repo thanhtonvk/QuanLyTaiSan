@@ -93,7 +93,7 @@ namespace QuanLyVatTu.UI.ControlUI
             }
             else
             {
-                MessageBox.Show("Thất bại");
+                MessageBox.Show("Bạn không thể xóa vì có liên kết khóa ngoại");
             }
         }
 

@@ -24,24 +24,47 @@ namespace QuanLyVatTu.DAO
 
         public int ThemKhoa(Khoa Khoa)
         {
-            dBContext.Khoas.Add(Khoa);
-            int result = dBContext.SaveChanges();
-            return result;
+            try
+            {
+                dBContext.Khoas.Add(Khoa);
+                int result = dBContext.SaveChanges();
+                return result;
+            }
+            catch
+            {
+            }
+            return 0;
         }
 
         public int DeleteKhoa(int maKhoa)
         {
-            Khoa Khoa = dBContext.Khoas.FirstOrDefault(x => x.makhoa == maKhoa);
-            if (Khoa != null) dBContext.Khoas.Remove(Khoa);
-            int result = dBContext.SaveChanges();
-            return result;
+            try
+            {
+                Khoa Khoa = dBContext.Khoas.FirstOrDefault(x => x.makhoa == maKhoa);
+                if (Khoa != null) dBContext.Khoas.Remove(Khoa);
+                int result = dBContext.SaveChanges();
+                return result;
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
 
         public int UpdateKhoa(Khoa Khoa)
         {
-            dBContext.Khoas.AddOrUpdate(Khoa);
-            int result = dBContext.SaveChanges();
-            return result;
+            try
+            {
+                dBContext.Khoas.AddOrUpdate(Khoa);
+                int result = dBContext.SaveChanges();
+                return result;
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
     }
 }

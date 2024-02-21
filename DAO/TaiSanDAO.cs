@@ -22,24 +22,48 @@ namespace QuanLyVatTu.DAO
 
         public int ThemTaiSan(TaiSan TaiSan)
         {
-            dBContext.TaiSans.Add(TaiSan);
-            int result = dBContext.SaveChanges();
-            return result;
+            try
+            {
+                dBContext.TaiSans.Add(TaiSan);
+                int result = dBContext.SaveChanges();
+                return result;
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
 
         public int DeleteTaiSan(int maTaiSan)
         {
-            TaiSan TaiSan = dBContext.TaiSans.FirstOrDefault(x => x.mataisan == maTaiSan);
-            if (TaiSan != null) dBContext.TaiSans.Remove(TaiSan);
-            int result = dBContext.SaveChanges();
-            return result;
+            try
+            {
+                TaiSan TaiSan = dBContext.TaiSans.FirstOrDefault(x => x.mataisan == maTaiSan);
+                if (TaiSan != null) dBContext.TaiSans.Remove(TaiSan);
+                int result = dBContext.SaveChanges();
+                return result;
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
 
         public int UpdateTaiSan(TaiSan TaiSan)
         {
-            dBContext.TaiSans.AddOrUpdate(TaiSan);
-            int result = dBContext.SaveChanges();
-            return result;
+            try
+            {
+                dBContext.TaiSans.AddOrUpdate(TaiSan);
+                int result = dBContext.SaveChanges();
+                return result;
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
     }
 }

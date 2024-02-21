@@ -23,24 +23,48 @@ namespace QuanLyVatTu.DAO
 
         public int ThemLoaiTaiSan(LoaiTaiSan LoaiTaiSan)
         {
+            try
+            {
             dBContext.LoaiTaiSans.Add(LoaiTaiSan);
             int result = dBContext.SaveChanges();
             return result;
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
 
         public int DeleteLoaiTaiSan(int maLoaiTaiSan)
         {
+            try
+            {
             LoaiTaiSan LoaiTaiSan = dBContext.LoaiTaiSans.FirstOrDefault(x => x.maloai == maLoaiTaiSan);
             if (LoaiTaiSan != null) dBContext.LoaiTaiSans.Remove(LoaiTaiSan);
             int result = dBContext.SaveChanges();
             return result;
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
 
         public int UpdateLoaiTaiSan(LoaiTaiSan LoaiTaiSan)
         {
+            try
+            {
             dBContext.LoaiTaiSans.AddOrUpdate(LoaiTaiSan);
             int result = dBContext.SaveChanges();
             return result;
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
     }
 }

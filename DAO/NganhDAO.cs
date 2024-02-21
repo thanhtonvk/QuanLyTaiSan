@@ -23,24 +23,48 @@ namespace QuanLyVatTu.DAO
 
         public int ThemNganh(Nganh Nganh)
         {
-            dBContext.Nganhs.Add(Nganh);
-            int result = dBContext.SaveChanges();
-            return result;
+            try
+            {
+                dBContext.Nganhs.Add(Nganh);
+                int result = dBContext.SaveChanges();
+                return result;
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
 
         public int DeleteNganh(int maNganh)
         {
-            Nganh Nganh = dBContext.Nganhs.FirstOrDefault(x => x.manganh == maNganh);
-            if (Nganh != null) dBContext.Nganhs.Remove(Nganh);
-            int result = dBContext.SaveChanges();
-            return result;
+            try
+            {
+                Nganh Nganh = dBContext.Nganhs.FirstOrDefault(x => x.manganh == maNganh);
+                if (Nganh != null) dBContext.Nganhs.Remove(Nganh);
+                int result = dBContext.SaveChanges();
+                return result;
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
 
         public int UpdateNganh(Nganh Nganh)
         {
-            dBContext.Nganhs.AddOrUpdate(Nganh);
-            int result = dBContext.SaveChanges();
-            return result;
+            try
+            {
+                dBContext.Nganhs.AddOrUpdate(Nganh);
+                int result = dBContext.SaveChanges();
+                return result;
+            }
+            catch
+            {
+            }
+            return 0;
+
         }
     }
 }
