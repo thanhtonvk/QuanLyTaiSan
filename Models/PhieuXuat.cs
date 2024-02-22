@@ -21,7 +21,7 @@
         [DisplayName("Ngày xuất")]
 
         public DateTime? ngayxuat { get; set; }
-        [DisplayName("Người nhập")]
+        [DisplayName("Đơn vị nhận")]
 
         [StringLength(100)]
         public string nguoinhap { get; set; }

@@ -16,12 +16,12 @@
         }
 
         [Key]
-        [DisplayName("Mã tài sản")]
+        [DisplayName("Mã vật tư")]
         public int mataisan { get; set; }
 
         [Required]
         [StringLength(100)]
-        [DisplayName("Tên tài sản")]
+        [DisplayName("Tên vật tư")]
         public string tentaisan { get; set; }
         [DisplayName("Mã ngành")]
 

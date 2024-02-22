@@ -14,7 +14,7 @@ create table TaiKhoan
     sdt          nvarchar(20),
     loaitaikhoan nvarchar(100),
 )
-insert into TaiKhoan (tentk, matkhau, hoten, email, diachi, sdt, loaitaikhoan)
+    insert into TaiKhoan (tentk, matkhau, hoten, email, diachi, sdt, loaitaikhoan)
 values ('admin', 'admin', 'admin', 'admin@admin.com', '', '', 'admin');
 go
 create table Khoa
@@ -25,7 +25,7 @@ create table Khoa
     sdt     nvarchar(20),
     ghichu  nvarchar(max)
 )
-go
+    go
 create table Nganh
 (
     manganh  int identity (1000,1) primary key,
@@ -35,14 +35,14 @@ create table Nganh
     makhoa   int           not null,
     constraint fk_makhoa foreign key (makhoa) references khoa (makhoa),
 )
-go
+    go
 create table LoaiTaiSan
 (
     maloai  int identity (1000,1) primary key,
     tenloai nvarchar(100) not null,
     ghichu  nvarchar(max)
 )
-go
+    go
 create table TaiSan
 (
     mataisan  int identity (1000,1) primary key,
@@ -55,7 +55,7 @@ create table TaiSan
     maloai    int           not null,
     constraint fk_loaitaisan foreign key (maloai) references LoaiTaiSan (maloai)
 )
-go
+    go
 create table PhieuNhap
 (
     maphieunhap int identity (1000,1) primary key,
@@ -63,7 +63,7 @@ create table PhieuNhap
     nguoinhap   nvarchar(100),
     ghichu      nvarchar(max)
 )
-go
+    go
 create table ChiTietPhieuNhap
 (
     mactpn      int identity (1000,1) primary key,
@@ -74,7 +74,7 @@ create table ChiTietPhieuNhap
     dongia      int not null,
     soluong     int not null,
 )
-go
+    go
 create table PhieuXuat
 (
     maphieuxuat int identity (1000,1) primary key,
@@ -82,7 +82,7 @@ create table PhieuXuat
     nguoinhap   nvarchar(100),
     ghichu      nvarchar(max)
 )
-go
+    go
 create table ChiTietPhieuXuat
 (
     mactpx      int identity (1000,1) primary key,
@@ -90,6 +90,6 @@ create table ChiTietPhieuXuat
     constraint fk_maphieuxuat foreign key (maphieuxuat) references PhieuXuat (maphieuxuat),
     mataisan    int not null,
     constraint fk_mataisan_px foreign key (mataisan) references TaiSan (mataisan),
-    dongia      int not null,
+    dongia      int,
     soluong     int not null,
 )

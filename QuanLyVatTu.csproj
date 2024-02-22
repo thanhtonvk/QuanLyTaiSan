@@ -112,11 +112,11 @@
     <Compile Include="UI\ControlUI\CtrlQuanLyPhieuXuat.Designer.cs">
       <DependentUpon>CtrlQuanLyPhieuXuat.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\ControlUI\CtrlQuanLyTaiSan.cs">
+    <Compile Include="UI\ControlUI\CtrlQuanLyVatTu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI\ControlUI\CtrlQuanLyTaiSan.Designer.cs">
-      <DependentUpon>CtrlQuanLyTaiSan.cs</DependentUpon>
+    <Compile Include="UI\ControlUI\CtrlQuanLyVatTu.Designer.cs">
+      <DependentUpon>CtrlQuanLyVatTu.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\ControlUI\CtrlThongKeHangTon.cs">
       <SubType>UserControl</SubType>
@@ -160,6 +160,42 @@
     <Compile Include="UI\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\TraCuuUI\CtrlTraCuuVatTu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\TraCuuUI\CtrlTraCuuVatTu.Designer.cs">
+      <DependentUpon>CtrlTraCuuVatTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TraCuuUI\CtrlTraCuuKhoa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\TraCuuUI\CtrlTraCuuKhoa.Designer.cs">
+      <DependentUpon>CtrlTraCuuKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TraCuuUI\CtrlTraCuuLoaiTaiSan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\TraCuuUI\CtrlTraCuuLoaiTaiSan.Designer.cs">
+      <DependentUpon>CtrlTraCuuLoaiTaiSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TraCuuUI\CtrlTraCuuNganh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\TraCuuUI\CtrlTraCuuNganh.Designer.cs">
+      <DependentUpon>CtrlTraCuuNganh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TraCuuUI\CtrlTraCuuPhieuNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\TraCuuUI\CtrlTraCuuPhieuNhap.Designer.cs">
+      <DependentUpon>CtrlTraCuuPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TraCuuUI\CtrlTraCuuPhieuXuat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\TraCuuUI\CtrlTraCuuPhieuXuat.Designer.cs">
+      <DependentUpon>CtrlTraCuuPhieuXuat.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -184,8 +220,8 @@
     <EmbeddedResource Include="UI\ControlUI\CtrlQuanLyPhieuXuat.resx">
       <DependentUpon>CtrlQuanLyPhieuXuat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\ControlUI\CtrlQuanLyTaiSan.resx">
-      <DependentUpon>CtrlQuanLyTaiSan.cs</DependentUpon>
+    <EmbeddedResource Include="UI\ControlUI\CtrlQuanLyVatTu.resx">
+      <DependentUpon>CtrlQuanLyVatTu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ControlUI\CtrlThongKeHangTon.resx">
       <DependentUpon>CtrlThongKeHangTon.cs</DependentUpon>
@@ -207,6 +243,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TraCuuUI\CtrlTraCuuVatTu.resx">
+      <DependentUpon>CtrlTraCuuVatTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TraCuuUI\CtrlTraCuuKhoa.resx">
+      <DependentUpon>CtrlTraCuuKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TraCuuUI\CtrlTraCuuLoaiTaiSan.resx">
+      <DependentUpon>CtrlTraCuuLoaiTaiSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TraCuuUI\CtrlTraCuuNganh.resx">
+      <DependentUpon>CtrlTraCuuNganh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TraCuuUI\CtrlTraCuuPhieuNhap.resx">
+      <DependentUpon>CtrlTraCuuPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TraCuuUI\CtrlTraCuuPhieuXuat.resx">
+      <DependentUpon>CtrlTraCuuPhieuXuat.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

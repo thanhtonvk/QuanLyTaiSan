@@ -39,7 +39,6 @@ namespace QuanLyVatTu.UI
             ChiTietPhieuXuat chiTietPhieuXuat = new ChiTietPhieuXuat();
             chiTietPhieuXuat.mactpx = id;
             chiTietPhieuXuat.maphieuxuat = Constants.id;
-            chiTietPhieuXuat.dongia = int.Parse(tbDonGia.Text.Trim());
             chiTietPhieuXuat.soluong = int.Parse(tbSoLuong.Text.Trim());
             int selectedTaiSan = comboBox1.SelectedIndex;
             int idTaiSan = TaiSanList[selectedTaiSan].mataisan;
@@ -60,7 +59,6 @@ namespace QuanLyVatTu.UI
         {
             ChiTietPhieuXuat chiTietPhieuXuat = new ChiTietPhieuXuat();
             chiTietPhieuXuat.maphieuxuat = Constants.id;
-            chiTietPhieuXuat.dongia = int.Parse(tbDonGia.Text.Trim());
             chiTietPhieuXuat.soluong = int.Parse(tbSoLuong.Text.Trim());
             int selectedTaiSan = comboBox1.SelectedIndex;
             int idTaiSan = TaiSanList[selectedTaiSan].mataisan;
@@ -103,7 +101,6 @@ namespace QuanLyVatTu.UI
                 comboBox1.Text = taiSan.tentaisan.ToString();
                 int donGia = int.Parse(row.Cells[3].Value.ToString());
                 int soLuong = int.Parse(row.Cells[4].Value.ToString());
-                tbDonGia.Text = donGia.ToString();
                 tbSoLuong.Text = soLuong.ToString();
             }
         }

@@ -1,13 +1,6 @@
 ﻿using QuanLyVatTu.DAO;
 using QuanLyVatTu.Models;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QuanLyVatTu.UI.ControlUI
@@ -96,11 +89,6 @@ namespace QuanLyVatTu.UI.ControlUI
                 MessageBox.Show("Bạn không thể xóa vì có liên kết khóa ngoại");
             }
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            string tuKhoa = tbTimKiem.Text.Trim();
-            loadDs(tuKhoa);
-        }
+        
     }
 }

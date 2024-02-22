@@ -11,7 +11,7 @@ using System.Linq;
 
 namespace QuanLyVatTu.UI.ControlUI
 {
-    public partial class CtrlQuanLyTaiSan : UserControl
+    public partial class CtrlQuanLyVatTu : UserControl
     {
         private TaiSanDAO _taiSanDao = new TaiSanDAO();
         private NganhDAO _nganhDao = new NganhDAO();
@@ -23,7 +23,7 @@ namespace QuanLyVatTu.UI.ControlUI
         private string imagePath = "";
         private int id = -1;
 
-        public CtrlQuanLyTaiSan()
+        public CtrlQuanLyVatTu()
         {
             InitializeComponent();
             dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
@@ -114,12 +114,6 @@ namespace QuanLyVatTu.UI.ControlUI
             {
                 MessageBox.Show("Bạn không thể xóa vì có liên kết khóa ngoại");
             }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            string tuKhoa = tbTimKiem.Text.Trim();
-            loadDs(tuKhoa);
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

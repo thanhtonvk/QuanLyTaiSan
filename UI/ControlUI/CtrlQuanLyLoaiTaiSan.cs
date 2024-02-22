@@ -79,12 +79,7 @@ namespace QuanLyVatTu.UI.ControlUI
                 MessageBox.Show("Bạn không thể xóa vì có liên kết khóa ngoại");
             }
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            string tuKhoa = tbTimKiem.Text.Trim();
-            loadDs(tuKhoa);
-        }
+        
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {

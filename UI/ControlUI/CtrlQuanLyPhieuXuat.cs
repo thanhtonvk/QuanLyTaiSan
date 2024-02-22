@@ -81,11 +81,7 @@ namespace QuanLyVatTu.UI.ControlUI
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            string tuKhoa = tbTimKiem.Text.Trim();
-            loadDs(tuKhoa);
-        }
+
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -110,6 +106,11 @@ namespace QuanLyVatTu.UI.ControlUI
             {
                 MessageBox.Show("Vui lòng chọn 1 hóa đơn nhập");
             }
+        }
+
+        private void CtrlQuanLyPhieuXuat_Load(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

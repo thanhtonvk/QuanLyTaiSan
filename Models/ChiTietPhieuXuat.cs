@@ -16,15 +16,10 @@
         [DisplayName("Mã phiếu xuất")]
 
         public int maphieuxuat { get; set; }
-        [DisplayName("Mã tài sản")]
+        [DisplayName("Mã vật tư")]
         public int mataisan { get; set; }
-        [DisplayName("Đơn giá")]
-
-        public int dongia { get; set; }
         [DisplayName("Số lượng")]
         public int soluong { get; set; }
-        [DisplayName("Thành tiền")]
-        public int thanhtien { get => dongia * soluong; }
 
     }
 }

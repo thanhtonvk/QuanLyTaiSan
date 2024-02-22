@@ -64,10 +64,11 @@
             this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(18, 61);
+            this.button1.Location = new System.Drawing.Point(18, 54);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 27);
+            this.button1.Size = new System.Drawing.Size(200, 34);
             this.button1.TabIndex = 50;
             this.button1.Text = "Cấp quyền quản lý";
             this.button1.UseVisualStyleBackColor = false;
@@ -100,7 +101,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

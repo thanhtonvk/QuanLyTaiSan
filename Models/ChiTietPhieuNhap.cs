@@ -16,7 +16,7 @@
         [DisplayName("Mã phiếu nhập")]
 
         public int maphieunhap { get; set; }
-        [DisplayName("Mã tài sản")]
+        [DisplayName("Mã vật tư")]
 
         public int mataisan { get; set; }
         [DisplayName("Đơn giá")]
