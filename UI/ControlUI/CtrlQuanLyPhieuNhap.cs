@@ -109,5 +109,10 @@ namespace QuanLyVatTu.UI.ControlUI
                 MessageBox.Show("Vui lòng chọn 1 hóa đơn nhập");
             }
         }
+
+        private void CtrlQuanLyPhieuNhap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -27,8 +27,10 @@ namespace QuanLyVatTu.UI
             {
                 this.Hide();
                 Main main = new Main();
-                main.ShowDialog();
-
+                main.Closed += (s, args) => this.Close();
+                main.Show();
+         
+          
             }
         }
 

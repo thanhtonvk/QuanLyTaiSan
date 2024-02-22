@@ -150,16 +150,17 @@
             // txtId
             // 
             this.txtId.AutoSize = true;
-            this.txtId.Location = new System.Drawing.Point(137, 106);
+            this.txtId.Font = new System.Drawing.Font("Arial", 14F);
+            this.txtId.Location = new System.Drawing.Point(160, 111);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(0, 13);
+            this.txtId.Size = new System.Drawing.Size(0, 22);
             this.txtId.TabIndex = 98;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 14F);
-            this.label2.Location = new System.Drawing.Point(23, 106);
+            this.label2.Location = new System.Drawing.Point(4, 111);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 22);
             this.label2.TabIndex = 97;
@@ -231,6 +232,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

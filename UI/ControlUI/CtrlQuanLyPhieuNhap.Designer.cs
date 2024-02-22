@@ -132,16 +132,17 @@
             // txtid
             // 
             this.txtid.AutoSize = true;
-            this.txtid.Location = new System.Drawing.Point(131, 106);
+            this.txtid.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtid.Location = new System.Drawing.Point(152, 108);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(0, 13);
+            this.txtid.Size = new System.Drawing.Size(0, 22);
             this.txtid.TabIndex = 80;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 14F);
-            this.label2.Location = new System.Drawing.Point(21, 106);
+            this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 22);
             this.label2.TabIndex = 79;
@@ -226,10 +227,12 @@
             this.Controls.Add(this.label1);
             this.Name = "CtrlQuanLyPhieuNhap";
             this.Size = new System.Drawing.Size(720, 480);
+            this.Load += new System.EventHandler(this.CtrlQuanLyPhieuNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

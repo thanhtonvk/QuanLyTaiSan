@@ -143,5 +143,17 @@ namespace QuanLyVatTu.UI
             FrmQuanLyTaiKhoan frm = new FrmQuanLyTaiKhoan();
             frm.ShowDialog();
         }
+
+        private void báoCáoHóaĐơnNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CtrlTraCuuPhieuNhap ctrl = new CtrlTraCuuPhieuNhap();
+            addUserControl(ctrl);
+        }
+
+        private void báoCáoHóaĐơnXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CtrlTraCuuPhieuXuat ctrl = new CtrlTraCuuPhieuXuat();
+            addUserControl(ctrl);
+        }
     }
 }

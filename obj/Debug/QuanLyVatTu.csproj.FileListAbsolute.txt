@@ -17,7 +17,6 @@ D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.ControlUI.CtrlQuanLyNganh.resour
 D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.ControlUI.CtrlQuanLyKhoa.resources
 D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.ControlUI.CtrlQuanLyPhieuNhap.resources
 D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.ControlUI.CtrlQuanLyPhieuXuat.resources
-D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.ControlUI.CtrlQuanLyTaiSan.resources
 D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.FrmChiTietPhieuNhap.resources
 D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.FrmChiTietPhieuXuat.resources
 D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.FrmDangKy.resources
@@ -59,3 +58,10 @@ D:\QuanLyTaiSan\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuLoaiTaiSan.resource
 D:\QuanLyTaiSan\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuNganh.resources
 D:\QuanLyTaiSan\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuPhieuNhap.resources
 D:\QuanLyTaiSan\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuPhieuXuat.resources
+D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.ControlUI.CtrlQuanLyVatTu.resources
+D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.TraCuuUI.CtrlTraCuuVatTu.resources
+D:\Winform\QuanLyVatTu\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuKhoa.resources
+D:\Winform\QuanLyVatTu\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuLoaiTaiSan.resources
+D:\Winform\QuanLyVatTu\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuNganh.resources
+D:\Winform\QuanLyVatTu\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuPhieuNhap.resources
+D:\Winform\QuanLyVatTu\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuPhieuXuat.resources

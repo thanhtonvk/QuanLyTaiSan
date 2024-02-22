@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using QuanLyVatTu.Models;
 using System.IO;
 using System.Linq;
+using System.Drawing.Printing;
 
 namespace QuanLyVatTu.UI.TraCuuUI
 {
@@ -63,6 +64,34 @@ namespace QuanLyVatTu.UI.TraCuuUI
         {
             string tukhoa = tbTimKiem.Text.Trim();
             loadDs(tukhoa);
+        }
+
+        ScreenCapture capScreen = new ScreenCapture();
+        Bitmap memoryImage;
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            PrintDocument printDocument1 = new PrintDocument();
+
+
+            try
+            {
+                // Call the CaptureAndSave method from the ScreenCapture class 
+                // And create a temporary file in C:\Temp
+                memoryImage = capScreen.Capture(CaptureMode.Window);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
+            printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
+            printDocument1.Print();
+
+        }
+        private void printDocument1_PrintPage(System.Object sender,
+  System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(memoryImage, 0, 0);
         }
     }
 }

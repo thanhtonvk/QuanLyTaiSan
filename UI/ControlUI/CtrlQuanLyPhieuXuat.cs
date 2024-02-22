@@ -110,7 +110,7 @@ namespace QuanLyVatTu.UI.ControlUI
 
         private void CtrlQuanLyPhieuXuat_Load(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+         
         }
     }
 }

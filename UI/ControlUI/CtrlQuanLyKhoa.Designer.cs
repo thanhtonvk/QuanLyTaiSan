@@ -75,7 +75,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 14F);
-            this.label2.Location = new System.Drawing.Point(18, 64);
+            this.label2.Location = new System.Drawing.Point(17, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 22);
             this.label2.TabIndex = 19;
@@ -85,7 +85,7 @@
             // 
             this.txtId.AutoSize = true;
             this.txtId.Font = new System.Drawing.Font("Arial", 14F);
-            this.txtId.Location = new System.Drawing.Point(97, 64);
+            this.txtId.Location = new System.Drawing.Point(108, 68);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(0, 22);
             this.txtId.TabIndex = 20;
@@ -254,6 +254,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
