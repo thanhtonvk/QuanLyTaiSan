@@ -10,7 +10,6 @@
     [Table("TaiSan")]
     public partial class TaiSan
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TaiSan()
         {
         }
@@ -32,7 +31,7 @@
         [DisplayName("Số lượng")]
 
         public int? soluong { get; set; }
-        [DisplayName("Ghi chú")]
+        [DisplayName("Đơn vị tính")]
 
         public string ghichu { get; set; }
         [DisplayName("Mã loại")]

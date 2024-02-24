@@ -59,9 +59,13 @@ D:\QuanLyTaiSan\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuNganh.resources
 D:\QuanLyTaiSan\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuPhieuNhap.resources
 D:\QuanLyTaiSan\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuPhieuXuat.resources
 D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.ControlUI.CtrlQuanLyVatTu.resources
-D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.TraCuuUI.CtrlTraCuuVatTu.resources
-D:\Winform\QuanLyVatTu\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuKhoa.resources
-D:\Winform\QuanLyVatTu\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuLoaiTaiSan.resources
-D:\Winform\QuanLyVatTu\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuNganh.resources
 D:\Winform\QuanLyVatTu\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuPhieuNhap.resources
 D:\Winform\QuanLyVatTu\obj\Debug\TraCuuVatTu.UI.ControlUI.CtrlTraCuuPhieuXuat.resources
+D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.ControlUI.CtrlQuanLyHinhThucThanhToan.resources
+D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.ControlUI.CtrlQuanLyNhaCungCap.resources
+D:\Winform\QuanLyVatTu\obj\Debug\QuanLyVatTu.UI.ControlUI.CtrlQuanLyKho.resources
+D:\Winform\QuanLyVatTu\bin\Debug\ArrayToExcel.dll
+D:\Winform\QuanLyVatTu\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Winform\QuanLyVatTu\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+D:\Winform\QuanLyVatTu\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Winform\QuanLyVatTu\bin\Debug\DocumentFormat.OpenXml.Framework.xml

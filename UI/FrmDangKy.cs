@@ -28,6 +28,7 @@ namespace QuanLyVatTu.UI
             taiKhoan.sdt = txtSDT.Text.Trim();
             taiKhoan.diachi = txtDiaChi.Text.Trim();
             taiKhoan.hoten = txtHoten.Text.Trim();
+            taiKhoan.loaitaikhoan = "Người dùng";
             int result = TaiKhoanDAO.ThemTaiKhoan(taiKhoan);
             if (result > 0)
             {

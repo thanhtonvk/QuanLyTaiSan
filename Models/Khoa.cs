@@ -10,7 +10,6 @@
     [Table("Khoa")]
     public partial class Khoa
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Khoa()
         {
         }

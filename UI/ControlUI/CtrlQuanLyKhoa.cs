@@ -1,6 +1,8 @@
-﻿using QuanLyVatTu.DAO;
+﻿using ArrayToExcel;
+using QuanLyVatTu.DAO;
 using QuanLyVatTu.Models;
 using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace QuanLyVatTu.UI.ControlUI
@@ -89,6 +91,23 @@ namespace QuanLyVatTu.UI.ControlUI
                 MessageBox.Show("Bạn không thể xóa vì có liên kết khóa ngoại");
             }
         }
-        
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string tuKhoa = tbTimKiem.Text.Trim();
+            loadDs(tuKhoa);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //start excel
+            var excel = khoaDAO.DsKhoa("").ToExcel();
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = ("Excel File|*.xlsx");
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                File.WriteAllBytes(saveFileDialog.FileName, excel);
+            }
+        }
     }
 }

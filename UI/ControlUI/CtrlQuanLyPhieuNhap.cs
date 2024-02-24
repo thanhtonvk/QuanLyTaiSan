@@ -19,6 +19,13 @@ namespace QuanLyVatTu.UI.ControlUI
         PhieuNhapDAO phieuNhapDAO = new PhieuNhapDAO();
         int id = 0;
         List<PhieuNhap> phieuNhapList;
+
+        KhoDAO khoDAO = new KhoDAO();
+        NhaCungCapDAO nhaCungCapDAO = new NhaCungCapDAO();
+        HinhThucThanhToanDAO hinhThucThanhToanDAO = new HinhThucThanhToanDAO();
+        List<Kho> khoList;
+        List<NhaCungCap> nhaCungCapList;
+        List<HinhThucThanhToan> hinhThucThanhToanList;
         public CtrlQuanLyPhieuNhap()
         {
             InitializeComponent();
@@ -30,6 +37,12 @@ namespace QuanLyVatTu.UI.ControlUI
         {
             phieuNhapList = phieuNhapDAO.DsPhieuNhap(tuKhoa);
             dataGridView1.DataSource = phieuNhapList;
+            khoList = khoDAO.DsKho("");
+            nhaCungCapList = nhaCungCapDAO.DsNhaCungCap("");
+            hinhThucThanhToanList = hinhThucThanhToanDAO.DsHinhThucThanhToan("");
+            cbKho.DataSource = khoList;
+            cbNCC.DataSource = nhaCungCapList;
+            cbThanhToan.DataSource = hinhThucThanhToanList;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -57,6 +70,9 @@ namespace QuanLyVatTu.UI.ControlUI
             phieuNhap.ngaynhap = DateTime.Now;
             phieuNhap.ghichu = tbGhiChu.Text.Trim();
             phieuNhap.nguoinhap = tbNguoiNhap.Text.Trim();
+            phieuNhap.makho = khoList[cbKho.SelectedIndex].makho;
+            phieuNhap.manhancc= nhaCungCapList[cbNCC.SelectedIndex].mancc;
+            phieuNhap.matt = hinhThucThanhToanList[cbThanhToan.SelectedIndex].maht;
             int kq = phieuNhapDAO.ThemPhieuNhap(phieuNhap);
             if (kq > 0)
             {
@@ -98,7 +114,7 @@ namespace QuanLyVatTu.UI.ControlUI
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if(id!=0)
+            if (id != 0)
             {
                 Constants.id = id;
                 FrmChiTietPhieuNhap frm = new FrmChiTietPhieuNhap();
@@ -113,6 +129,12 @@ namespace QuanLyVatTu.UI.ControlUI
         private void CtrlQuanLyPhieuNhap_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string tuKhoa = tbTimKiem.Text.Trim();
+            loadDs(tuKhoa);
         }
     }
 }

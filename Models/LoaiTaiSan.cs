@@ -10,7 +10,7 @@
     [Table("LoaiTaiSan")]
     public partial class LoaiTaiSan
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+  
         public LoaiTaiSan()
         {
         }

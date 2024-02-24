@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyVatTu.Models;
+using ArrayToExcel;
+using System.IO;
 
 namespace QuanLyVatTu.UI.ControlUI
 {
@@ -116,6 +118,24 @@ namespace QuanLyVatTu.UI.ControlUI
                 int maKhoa = int.Parse(row.Cells[4].Value.ToString());
                 Khoa khoa = khoaList.FirstOrDefault(x => x.makhoa == maKhoa);
                 comboBox1.Text = khoa.tenkhoa;
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string tuKhoa = tbTimKiem.Text.Trim();
+            loadDs(tuKhoa);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+    //start excel
+            var excel = nganhDAO.DsNganh("").ToExcel();
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = ("Excel File|*.xlsx");
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                File.WriteAllBytes(saveFileDialog.FileName, excel);
             }
         }
     }

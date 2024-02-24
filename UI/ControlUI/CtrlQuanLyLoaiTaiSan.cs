@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ArrayToExcel;
 using QuanLyVatTu.DAO;
 using QuanLyVatTu.Models;
 
@@ -89,6 +91,24 @@ namespace QuanLyVatTu.UI.ControlUI
                 txtId.Text = maLoaiTS.ToString();
                 tbTenLoai.Text = row.Cells[1].Value.ToString();
                 tbGhiChu.Text = row.Cells[2].Value.ToString();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string tuKhoa = tbTimKiem.Text.Trim();
+            loadDs(tuKhoa);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //start excel
+            var excel = _loaiTaiSanDao.DsLoaiTaiSan("").ToExcel();
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = ("Excel File|*.xlsx");
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                File.WriteAllBytes(saveFileDialog.FileName, excel);
             }
         }
     }

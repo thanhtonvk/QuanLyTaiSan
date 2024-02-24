@@ -10,7 +10,7 @@
     [Table("PhieuXuat")]
     public partial class PhieuXuat
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+      
         public PhieuXuat()
         {
         }

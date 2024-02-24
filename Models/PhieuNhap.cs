@@ -10,7 +10,7 @@
     [Table("PhieuNhap")]
     public partial class PhieuNhap
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+
         public PhieuNhap()
         {
         }
@@ -28,5 +28,11 @@
         [DisplayName("Ghi chú")]
 
         public string ghichu { get; set; }
+        [DisplayName("Mã kho")]
+        public int makho { get; set; }
+        [DisplayName("Mã NCC")]
+        public int manhancc { get; set; }
+        [DisplayName("Mã hình thức thanh toán")]
+        public int matt { get; set; }
     }
 }

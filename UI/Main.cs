@@ -1,7 +1,6 @@
 ﻿using QuanLyVatTu.UI.ControlUI;
 using System;
 using System.Windows.Forms;
-using QuanLyVatTu.UI.TraCuuUI;
 using TraCuuVatTu.UI.ControlUI;
 
 namespace QuanLyVatTu.UI
@@ -96,11 +95,7 @@ namespace QuanLyVatTu.UI
             }
         }
 
-        private void traCứuLoạiVậtTưToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CtrlTraCuuLoaiTaiSan ctrl = new CtrlTraCuuLoaiTaiSan();
-            addUserControl(ctrl);
-        }
+
 
         private void traCaaPhiToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -108,23 +103,7 @@ namespace QuanLyVatTu.UI
             addUserControl(ctrl);
         }
 
-        private void traCứuVậtTưToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CtrlTraCuuVatTu ctrl = new CtrlTraCuuVatTu();
-            addUserControl(ctrl);
-        }
-
-        private void traCứuKhoaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CtrlTraCuuKhoa ctrl = new CtrlTraCuuKhoa();
-            addUserControl(ctrl);
-        }
-
-        private void traCứuChuyênNgànhToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CtrlTraCuuNganh ctrl = new CtrlTraCuuNganh();
-            addUserControl(ctrl);
-        }
+    
 
         private void traCứuPhiếuXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -153,6 +132,24 @@ namespace QuanLyVatTu.UI
         private void báoCáoHóaĐơnXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CtrlTraCuuPhieuXuat ctrl = new CtrlTraCuuPhieuXuat();
+            addUserControl(ctrl);
+        }
+
+        private void quảnLýKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CtrlQuanLyKho ctrl = new CtrlQuanLyKho();
+            addUserControl(ctrl);
+        }
+
+        private void quảnLýNhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CtrlQuanLyNhaCungCap ctrl = new CtrlQuanLyNhaCungCap();
+            addUserControl(ctrl);
+        }
+
+        private void quảnLýThanhToánToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CtrlQuanLyHinhThucThanhToan ctrl = new CtrlQuanLyHinhThucThanhToan();
             addUserControl(ctrl);
         }
     }

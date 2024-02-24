@@ -14,27 +14,19 @@ namespace QuanLyVatTu.Models
 
         public virtual DbSet<ChiTietPhieuNhap> ChiTietPhieuNhaps { get; set; }
         public virtual DbSet<ChiTietPhieuXuat> ChiTietPhieuXuats { get; set; }
+        public virtual DbSet<HinhThucThanhToan> HinhThucThanhToans { get; set; }
+        public virtual DbSet<Kho> Khoes { get; set; }
         public virtual DbSet<Khoa> Khoas { get; set; }
         public virtual DbSet<LoaiTaiSan> LoaiTaiSans { get; set; }
         public virtual DbSet<Nganh> Nganhs { get; set; }
+        public virtual DbSet<NhaCungCap> NhaCungCaps { get; set; }
         public virtual DbSet<PhieuNhap> PhieuNhaps { get; set; }
         public virtual DbSet<PhieuXuat> PhieuXuats { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TaiKhoan> TaiKhoans { get; set; }
         public virtual DbSet<TaiSan> TaiSans { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Khoa>();
-
-            modelBuilder.Entity<LoaiTaiSan>();
-
-            modelBuilder.Entity<Nganh>();
-
-            modelBuilder.Entity<PhieuNhap>();
-
-            modelBuilder.Entity<PhieuXuat>();
-
             modelBuilder.Entity<TaiKhoan>()
                 .Property(e => e.tentk)
                 .IsUnicode(false);
@@ -42,10 +34,6 @@ namespace QuanLyVatTu.Models
             modelBuilder.Entity<TaiKhoan>()
                 .Property(e => e.matkhau)
                 .IsUnicode(false);
-
-            modelBuilder.Entity<TaiSan>();
-
-            modelBuilder.Entity<TaiSan>();
         }
     }
 }

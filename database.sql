@@ -33,7 +33,7 @@ create table Nganh
     sdt      nvarchar(20),
     ghichu   nvarchar(max),
     makhoa   int           not null,
-    constraint fk_makhoa foreign key (makhoa) references khoa (makhoa),
+    --constraint fk_makhoa foreign key (makhoa) references khoa (makhoa),
 )
     go
 create table LoaiTaiSan
@@ -48,29 +48,57 @@ create table TaiSan
     mataisan  int identity (1000,1) primary key,
     tentaisan nvarchar(100) not null,
     manganh   int           not null,
-    constraint fk_manganh foreign key (manganh) references Nganh (manganh),
+    --constraint fk_manganh foreign key (manganh) references Nganh (manganh),
     hinhanh   nvarchar(max),
     soluong   int default 0,
     ghichu    nvarchar(max),
     maloai    int           not null,
-    constraint fk_loaitaisan foreign key (maloai) references LoaiTaiSan (maloai)
+    --constraint fk_loaitaisan foreign key (maloai) references LoaiTaiSan (maloai)
+)
+go
+create table Kho(
+    makho int identity(1000,1) primary key,
+    tenkho nvarchar(max),
+    diachi nvarchar(max)
+
+)
+go
+create table HinhThucThanhToan(
+    maht int identity(1000,1) primary key,
+    tenht nvarchar(max)
+
+)
+go
+create table NhaCungCap(
+    mancc int identity (1000,1) primary key,
+    tenncc nvarchar(max),
+    diachi nvarchar(max),
+    dienthoai nvarchar(max),
+    sotk nvarchar(max),
+    fax nvarchar(max)
+
 )
     go
+
 create table PhieuNhap
 (
     maphieunhap int identity (1000,1) primary key,
     ngaynhap    datetime default getdate(),
     nguoinhap   nvarchar(100),
-    ghichu      nvarchar(max)
+    ghichu      nvarchar(max),
+    makho int not null,
+	manhancc int not null,
+	matt int not null
+
 )
     go
 create table ChiTietPhieuNhap
 (
     mactpn      int identity (1000,1) primary key,
     maphieunhap int not null,
-    constraint fk_maphieunhap foreign key (maphieunhap) references PhieuNhap (maphieunhap),
+    --constraint fk_maphieunhap foreign key (maphieunhap) references PhieuNhap (maphieunhap),
     mataisan    int not null,
-    constraint fk_mataisan foreign key (mataisan) references TaiSan (mataisan),
+    --constraint fk_mataisan foreign key (mataisan) references TaiSan (mataisan),
     dongia      int not null,
     soluong     int not null,
 )
@@ -87,9 +115,8 @@ create table ChiTietPhieuXuat
 (
     mactpx      int identity (1000,1) primary key,
     maphieuxuat int not null,
-    constraint fk_maphieuxuat foreign key (maphieuxuat) references PhieuXuat (maphieuxuat),
+    --constraint fk_maphieuxuat foreign key (maphieuxuat) references PhieuXuat (maphieuxuat),
     mataisan    int not null,
-    constraint fk_mataisan_px foreign key (mataisan) references TaiSan (mataisan),
-    dongia      int,
+    --constraint fk_mataisan_px foreign key (mataisan) references TaiSan (mataisan),
     soluong     int not null,
 )

@@ -8,6 +8,7 @@ using System.IO;
 using System.Data.Entity;
 using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
 using System.Linq;
+using ArrayToExcel;
 
 namespace QuanLyVatTu.UI.ControlUI
 {
@@ -160,6 +161,24 @@ namespace QuanLyVatTu.UI.ControlUI
                 LoaiTaiSan loaiTaiSan = dsLoaiTS.FirstOrDefault(x=>x.maloai == maLoai);
                 comboBox2.Text = loaiTaiSan.tenloai;
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //start excel
+            var excel = _taiSanDao.DsTaiSan("").ToExcel();
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = ("Excel File|*.xlsx");
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                File.WriteAllBytes(saveFileDialog.FileName, excel);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string tukhoa = tbTimKiem.Text.Trim();
+            loadDs(tukhoa);
         }
     }
 }
