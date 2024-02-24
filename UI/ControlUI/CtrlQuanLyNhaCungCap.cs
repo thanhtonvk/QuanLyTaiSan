@@ -116,5 +116,10 @@ namespace QuanLyVatTu.UI.ControlUI
                 File.WriteAllBytes(saveFileDialog.FileName, excel);
             }
         }
+
+        private void CtrlQuanLyNhaCungCap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

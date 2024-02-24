@@ -112,6 +112,7 @@
             this.button3.Text = "Xóa";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -129,6 +130,7 @@
             this.button2.Text = "Cập nhật";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -317,6 +319,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CtrlQuanLyNhaCungCap";
             this.Size = new System.Drawing.Size(720, 480);
+            this.Load += new System.EventHandler(this.CtrlQuanLyNhaCungCap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
